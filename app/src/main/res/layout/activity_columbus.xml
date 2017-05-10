@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/columbus2"
+        />
+
+    <!-- booking button
+    topmost because works as anchor for all the other views
+     which is why it has to be defined first in the markup
+     even though it will appear as the bottommost element-->
+    <Button
+        android:id="@+id/book_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Book a visit!"
+        android:textColor="@android:color/white" />
+
+    <!-- phone -->
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/book_btn"
+        android:background="#80000000"
+        android:fontFamily="sans-serif"
+        android:gravity="right"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:text="+39 010 449 0128"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        />
+
+    <!-- address -->
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/phone"
+        android:background="#80000000"
+        android:fontFamily="sans-serif"
+        android:gravity="right"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:text="Via di Porta Soprana, 16121 Genova, Italy"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        />
+
+    <!-- opening hours -->
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/address"
+        android:background="#80000000"
+        android:fontFamily="sans-serif"
+        android:gravity="right"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:text="Landmark - Open from 10am to 4pm"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        />
+
+    <!-- description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/hours"
+        android:background="#80000000"
+        android:fontFamily="sans-serif"
+        android:gravity="right"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:text="Dive in the past and visit the historical genovese house of the discoverer of the Americas, Christopher Columbus."
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>
+
+</LinearLayout>    
+</ScrollView>
