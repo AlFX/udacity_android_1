@@ -4,72 +4,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:scrollbars="none" >
+    android:scrollbars="none">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/columbus2" />
+        android:layout_height="match_parent">
 
-    <!-- booking button
-    topmost because works as anchor for all the other views
-     which is why it has to be defined first in the markup
-     even though it will appear as the bottommost element-->
-    <Button
-        style="@style/button"
-        android:id="@+id/book_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="@string/book_btn" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <!-- phone -->
-    <TextView
-        style="@style/features"
-        android:id="@+id/phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/book_btn"
-        android:text="@string/phone" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/columbus2" />
 
-    <!-- address -->
-    <TextView
-        style="@style/features"
-        android:id="@+id/address"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/phone"
-        android:text="@string/address" />
+            <!-- booking button
+            topmost because works as anchor for all the other views
+             which is why it has to be defined first in the markup
+             even though it will appear as the bottommost element-->
+            <Button
+                android:id="@+id/book_btn"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/book_btn" />
 
-    <!-- opening hours -->
-    <TextView
-        style="@style/features"
-        android:id="@+id/hours"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/address"
-        android:text="@string/hours" />
+            <!-- phone -->
+            <TextView
+                android:id="@+id/phone"
+                style="@style/features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/book_btn"
+                android:text="@string/phone" />
 
-    <!-- description -->
-    <TextView
-        style="@style/features"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/hours"
-        android:paddingTop="16dp"
-        android:paddingLeft="16dp"
-        android:text="@string/description" />
+            <!-- address -->
+            <TextView
+                android:id="@+id/address"
+                style="@style/features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/phone"
+                android:text="@string/address" />
 
-</RelativeLayout>
+            <!-- opening hours -->
+            <TextView
+                android:id="@+id/hours"
+                style="@style/features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/address"
+                android:text="@string/hours" />
 
-</LinearLayout>    
+            <!-- description -->
+            <TextView
+                style="@style/features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/hours"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/description" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
 </ScrollView>
