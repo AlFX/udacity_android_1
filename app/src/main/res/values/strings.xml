@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Columbus\' house</string>
+    <string name="description">Dive in the past and visit the historical genovese house of the discoverer of the Americas, Christopher Columbus.</string>
+    <string name="hours">Landmark - Open from 10am to 4pm</string>
+    <string name="address">Via di Porta Soprana, 16121 Genova, Italy</string>
+    <string name="phone">+39 010 449 0128</string>
+    <string name="book_btn">Book a visit!</string>
 </resources>
